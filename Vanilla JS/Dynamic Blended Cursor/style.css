@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    position: relative;
+}
+
+.container .hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 32px;
+    gap: 56px;
+}
+
+.container .hero > * {
+    flex: 1;
+}
+
+.container .hero .text {
+    color: white;
+    font-size: 24px;
+    position: relative;
+}
+
+.container .hero .box {
+    height: 450px;
+    width: 250px;
+    background-color: #73ff00;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container .hero .box > * {
+    pointer-events: none;
+}
+
+.container .hero .box .title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Agency FB", sans-serif;
+}
+
+.cursor {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-left: -22px;
+    margin-top: -22px;
+    z-index: 1000;
+    /*backdrop-filter: grayscale(1);*/
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cursor.active {
+    transform: scale(1.5);
+}
