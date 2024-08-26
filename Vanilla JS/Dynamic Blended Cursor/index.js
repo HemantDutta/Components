@@ -12,3 +12,7 @@ window.addEventListener("mousemove", (e)=>{
         cursor.classList.remove("active");
     }
 })
+
+
+// //A great man once said:
+// //Sign the big boy, Contract. Sign the big boy ~ Tike Myson
