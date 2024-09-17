@@ -12,3 +12,50 @@
     display: grid;
     place-items: center;
 }
+
+.home-page .flip-card-wrapper {
+    position: relative;
+    z-index: 1;
+    perspective: 1000px;
+    transform: perspective(1000px);
+    height: 500px;
+    width: 450px;
+}
+
+.home-page .flip-card-wrapper .flip-card-front {
+    border: 1px solid white;
+    background: #242424;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    transition: transform 0.8s ease;
+    backface-visibility: hidden;
+}
+
+.home-page .flip-card-wrapper .flip-card-front .card-front-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.home-page .flip-card-wrapper .flip-card-front .card-front-bottom {
+    color: white;
+    font-size: 48px;
+}
+
+.home-page .flip-card-wrapper .flip-card-back {
+    padding: 32px;
+    position: absolute;
+    inset: 0;
+    background-color: #242424;
+    color: white;
+    font-size: 32px;
+    transition: transform 0.8s ease;
+    backface-visibility: hidden;
+    border: 1px solid white;
+    transform: rotateY(-180deg);
+}
