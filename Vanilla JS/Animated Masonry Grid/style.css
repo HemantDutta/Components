@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.home-page {
+    background-color: #161616;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1rem;
+    transform-style: preserve-3d;
+}
+
+.masonry-layout {
+    columns: 300px;
+    padding: 32px;
+}
