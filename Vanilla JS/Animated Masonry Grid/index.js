@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 end: "top 20%",
                 toggleActions: "play none play none",
                 markers: false,
-                onEnter: () => img.style.opacity = 1,
-                onEnterBack: () => img.style.opacity = 1,
                 scrub: 0.2,
             }
         });
