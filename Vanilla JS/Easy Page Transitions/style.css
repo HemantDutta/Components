@@ -1,0 +1,358 @@
+@view-transition {
+    navigation: auto;
+}
+
+/* Move In-Out Animation */
+
+/*@keyframes move-out {*/
+/*    from {*/
+/*        transform: translateY(0%);*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translateY(-100%);*/
+/*    }*/
+/*}*/
+
+/*@keyframes move-in {*/
+/*    from {*/
+/*        transform: translateY(100%);*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translateY(0%);*/
+/*    }*/
+/*}*/
+
+/*::view-transition-old(root) {*/
+/*    animation: 0.8s cubic-bezier(0.87, 0, 0.13, 1) both move-out;*/
+/*}*/
+
+/*::view-transition-new(root) {*/
+/*    animation: 0.8s cubic-bezier(0.87, 0, 0.13, 1) both move-in;*/
+/*}*/
+
+/* Move In-Out Animation  End */
+
+/* ========== Filter Blur Zoom Animation */
+
+/*@keyframes blur-out {*/
+/*    from {*/
+/*        filter: blur(0px);*/
+/*        transform: scale(1);*/
+/*    }*/
+
+/*    to {*/
+/*        filter: blur(20px);*/
+/*        transform: scale(1.2);*/
+/*    }*/
+/*}*/
+
+/*@keyframes blur-in {*/
+/*    from {*/
+/*        filter: blur(20px);*/
+/*        transform: scale(1.2);*/
+/*    }*/
+
+/*    to {*/
+/*        filter: blur(0px);*/
+/*        transform: scale(1);*/
+/*    }*/
+/*}*/
+
+/*::view-transition-old(root) {*/
+/*    animation: 0.4s ease-out both blur-out;*/
+/*}*/
+
+/*::view-transition-new(root) {*/
+/*    animation: 0.4s ease-in both blur-in;*/
+/*}*/
+
+/* ========== Filter Blur Zoom Animation End*/
+
+/* ========== Yank Animation */
+
+/*@keyframes yank-out {*/
+/*    from {*/
+/*        transform: translate(0,0);*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translate(100%, -100%);*/
+/*    }*/
+/*}*/
+
+/*@keyframes yank-in {*/
+/*    from {*/
+/*        transform: translate(-100%, 100%);*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translate(0,0);*/
+/*    }*/
+/*}*/
+
+/*::view-transition-old(root) {*/
+/*    animation: 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) both yank-out;*/
+/*}*/
+
+/*::view-transition-new(root) {*/
+/*    animation: 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) both yank-in;*/
+/*}*/
+
+/* ========== Yank Animation End*/
+
+/* ========== Pop Drop Animation */
+
+/*@keyframes drop-out {*/
+/*    from {*/
+/*        transform: translateY(0);*/
+/*        opacity: 1;*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translateY(100%);*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/
+
+/*@keyframes fall-back {*/
+/*    from {*/
+/*        scale: 1;*/
+/*    }*/
+
+/*    to {*/
+/*        scale: 0.8;*/
+/*    }*/
+/*}*/
+
+/*@keyframes pop-in {*/
+/*    from {*/
+/*        transform: translateY(100%);*/
+/*        opacity: 0;*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translateY(0);*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/*@keyframes come-in {*/
+/*    from {*/
+/*        scale: 0.8;*/
+/*    }*/
+
+/*    to {*/
+/*        scale: 1;*/
+/*    }*/
+/*}*/
+
+/*::view-transition-old(root) {*/
+/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both drop-out, 0.4s cubic-bezier(0.87, 0, 0.13, 1) both fall-back;*/
+/*}*/
+
+/*::view-transition-new(root) {*/
+/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both pop-in, 1.4s cubic-bezier(0.87, 0, 0.13, 1) both come-in;*/
+/*    animation-delay: 0.4s;*/
+/*}*/
+
+/* ========== Pop Drop Animation End*/
+
+/* ========== Side Swipe  Animation */
+
+/*@keyframes fade-back {*/
+/*    from {*/
+/*        opacity: 1;*/
+/*        scale: 1;*/
+/*    }*/
+
+/*    to {*/
+/*        opacity: 0.5;*/
+/*        scale: 0.8;*/
+/*    }*/
+/*}*/
+
+/*@keyframes slide-in {*/
+/*    from {*/
+/*        transform: translateX(100%);*/
+/*        opacity: 0.5;*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translateX(0);*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/*::view-transition-old(root) {*/
+/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both fade-back;*/
+/*}*/
+
+/*::view-transition-new(root) {*/
+/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both slide-in;*/
+/*}*/
+
+/* ========== Side Swipe Animation End*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #161616;
+}
+
+.home-page {
+    background-color: #161616;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    gap: 32px;
+}
+
+.home-page .title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+    width: 800px;
+}
+
+.home-page .title .main {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.home-page .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 32px;
+}
+
+.home-page .grid a {
+    text-decoration: none;
+}
+
+.home-page .grid .blog-post {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 10px;
+    transition: all 0.4s ease;
+}
+
+.home-page .grid .blog-post:hover {
+    background-color: white;
+}
+
+.home-page .grid .blog-post .blog-view {
+    height: 350px;
+    width: 450px;
+}
+
+.home-page .grid .blog-post .blog-view img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home-page .grid .blog-post .blog-des {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.home-page .grid .blog-post .blog-des .blog-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.home-page .grid .blog-post:hover .blog-des {
+    color: black;
+}
+
+.blog-page {
+    background-color: #161616;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 32px;
+}
+
+.blog-page .go-back-div {
+    color: white;
+    padding: 16px;
+    border: 1px solid white;
+    width: max-content;
+    transition: all 0.4s ease;
+}
+
+.blog-page .go-back-div:hover {
+    background-color: #fff;
+}
+
+.blog-page .go-back-div a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.blog-page .go-back-div:hover a {
+    color: black;
+}
+
+.blog-page .blog-post-page {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.blog-page .blog-post-page .image-preview {
+    flex-basis: 40%;
+    height: 400px;
+}
+
+.blog-page .blog-post-page .image-preview img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-page .blog-post-page .blog-data {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.blog-page .blog-post-page .blog-data .data-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.blog-page .blog-post-page .blog-data .synopsis {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.blog-page .blog-post-page .blog-data .article {
+    color: white;
+    font-size: 18px;
+}
