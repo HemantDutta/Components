@@ -40,11 +40,13 @@
 /*    from {*/
 /*        filter: blur(0px);*/
 /*        transform: scale(1);*/
+/*        opacity: 1;*/
 /*    }*/
 
 /*    to {*/
 /*        filter: blur(20px);*/
 /*        transform: scale(1.2);*/
+/*        opacity: 0;*/
 /*    }*/
 /*}*/
 
@@ -52,11 +54,13 @@
 /*    from {*/
 /*        filter: blur(20px);*/
 /*        transform: scale(1.2);*/
+/*        opacity: 0;*/
 /*    }*/
 
 /*    to {*/
 /*        filter: blur(0px);*/
 /*        transform: scale(1);*/
+/*        opacity: 1;*/
 /*    }*/
 /*}*/
 
@@ -104,6 +108,16 @@
 
 /* ========== Pop Drop Animation */
 
+/*@keyframes fall-back {*/
+/*    from {*/
+/*        scale: 1;*/
+/*    }*/
+
+/*    to {*/
+/*        scale: 0.8;*/
+/*    }*/
+/*}*/
+
 /*@keyframes drop-out {*/
 /*    from {*/
 /*        transform: translateY(0);*/
@@ -113,16 +127,6 @@
 /*    to {*/
 /*        transform: translateY(100%);*/
 /*        opacity: 0;*/
-/*    }*/
-/*}*/
-
-/*@keyframes fall-back {*/
-/*    from {*/
-/*        scale: 1;*/
-/*    }*/
-
-/*    to {*/
-/*        scale: 0.8;*/
 /*    }*/
 /*}*/
 
@@ -149,11 +153,13 @@
 /*}*/
 
 /*::view-transition-old(root) {*/
-/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both drop-out, 0.4s cubic-bezier(0.87, 0, 0.13, 1) both fall-back;*/
+/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both drop-out,*/
+/*    0.4s cubic-bezier(0.87, 0, 0.13, 1) both fall-back;*/
 /*}*/
 
 /*::view-transition-new(root) {*/
-/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both pop-in, 1.4s cubic-bezier(0.87, 0, 0.13, 1) both come-in;*/
+/*    animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both pop-in,*/
+/*    1.4s cubic-bezier(0.87, 0, 0.13, 1) both come-in;*/
 /*    animation-delay: 0.4s;*/
 /*}*/
 

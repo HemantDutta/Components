@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.home-page {
+    background-color: #171717;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-font {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.home-page .js-slider {
+    overflow-x: scroll;
+    padding: 32px;
+    scroll-snap-type: x mandatory;
+}
+
+.home-page .js-slider .cards {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.home-page .js-slider .slider-card {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    min-width: 450px;
+    user-select: none;
+    scroll-snap-align: start;
+}
+
+.home-page .js-slider .slider-card .card-image {
+    flex-basis: 60%;
+    width: 100%;
+}
+
+.home-page .js-slider .slider-card .card-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home-page .js-slider .slider-card .card-text {
+    flex-basis: 40%;
+    background-color: #d33373;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 24px;
+}
+
+.home-page .js-slider .slider-card .card-text .card-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}

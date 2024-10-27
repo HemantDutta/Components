@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.home-page {
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to top, #0f0f0f, transparent), url("https://w.wallhaven.cc/full/2y/wallhaven-2yxp16.jpg") center no-repeat;
+}
+
+.hero span {
+    font-size: 128px;
+    color: #f0ead6;
+    font-weight: 700;
+    font-family: "Protest Strike", sans-serif;
+}
+
+.image-gallery {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: 5% 5%;
+    background-image: linear-gradient(rgba(240, 234, 214, 0.05) 1.5px, transparent 1.5px,
+    transparent calc(100% - 1.5px), rgba(240, 234, 214, 0.05) calc(100% - 1.5px)),
+    linear-gradient(90deg, rgba(240, 234, 214, 0.05) 1.5px, transparent 1.5px,
+            transparent calc(100% - 1.5px), rgba(240, 234, 214, 0.05) calc(100% - 1.5px));
+    color: #f0ead6;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-gallery .head {
+    font-size: 102px;
+    font-weight: 700;
+}
+
+.image-gallery .des {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40vw;
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+}
+
+.image-gallery .des .des-head {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.image-gallery img {
+    height: 500px;
+    width: 450px;
+    position: absolute;
+    box-shadow: 0 0 0 10px white;
+    object-fit: cover;
+}
+
+.image-gallery img:nth-child(odd) {
+    bottom: -65%;
+    left: 10%;
+    rotate: -5deg;
+}
+
+.image-gallery img:nth-child(even) {
+    bottom: -65%;
+    right: 10%;
+    rotate: 5deg;
+}
+
+.the-end {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, #0f0f0f, transparent), url("https://w.wallhaven.cc/full/rr/wallhaven-rrl8rw.png") center no-repeat;
+    background-size: cover;
+}
+
+.the-end span {
+    font-size: 128px;
+    color: #f0ead6;
+    font-weight: 700;
+    font-family: "Protest Strike", sans-serif;
+}
