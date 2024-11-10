@@ -31,10 +31,13 @@
     width: 100vw;
     position: relative;
     background-size: 5% 5%;
-    background-image: linear-gradient(rgba(240, 234, 214, 0.05) 1.5px, transparent 1.5px,
-    transparent calc(100% - 1.5px), rgba(240, 234, 214, 0.05) calc(100% - 1.5px)),
-    linear-gradient(90deg, rgba(240, 234, 214, 0.05) 1.5px, transparent 1.5px,
-            transparent calc(100% - 1.5px), rgba(240, 234, 214, 0.05) calc(100% - 1.5px));
+    background-image: linear-gradient(rgba(240, 234, 214, 0.05) 1.5px,
+    transparent 1.5px, transparent calc(100% - 1.5px),
+    rgba(240, 234, 214, 0.05) calc(100% - 1.5px)),
+    linear-gradient(90deg, rgba(240, 234, 214, 0.05) 1.5px,
+            transparent 1.5px,
+            transparent calc(100% - 1.5px),
+            rgba(240, 234, 214, 0.05) calc(100% - 1.5px));
     color: #f0ead6;
     padding-top: 48px;
     display: flex;

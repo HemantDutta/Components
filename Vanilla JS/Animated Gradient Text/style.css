@@ -17,7 +17,7 @@
 .home-page .gradient-text {
     font-size: 108px;
     font-weight: bold;
-    background: linear-gradient(90deg, #7091F5, #EDE4FF, #DD58D6);
+    background: linear-gradient(90deg, #c600ff, #ff0000, #006fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
