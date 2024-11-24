@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.home-page {
+    background: linear-gradient(120deg, #000000 50%, #1e1e1e 100%);
+    overflow-x: hidden;
+    height: 100vh;
+}
